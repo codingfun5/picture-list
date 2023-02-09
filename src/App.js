@@ -4,7 +4,7 @@ import { data } from './data';
 
 function App() {
     const [pic, setPic] = useState(data);
-    console.log(pic)
+   
     return(
         <Bird benefits={pic}/>
     )
