@@ -1,16 +1,14 @@
 import { useState } from 'react';
+import Bird from './Bird';
 import { data } from './data';
-import FirstName from './FirstName';
-import './App.css';
 
 function App() {
+    const [pic, setPic] = useState(data);
+    console.log(pic)
+    return(
+        <Bird benefits={pic}/>
+    )
 
-  const [person, setPerson] = useState(data);
-  
-  
-  return (
-   <FirstName anyWordYouWant={person}/>
-              
-  
-  )} 
+
+}
 export default App;
